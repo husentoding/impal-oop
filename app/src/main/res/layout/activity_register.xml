@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.husen.impal.RegisterActivity">
+
+    <EditText
+        android:id="@+id/regis_username"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="50dp"
+        android:inputType="textPersonName"
+        android:hint="username"/>
+
+    <EditText
+        android:id="@+id/regis_password"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:inputType="textPassword"
+        android:hint="password"
+        android:layout_below="@id/regis_username"/>
+
+    <EditText
+        android:id="@+id/regis_name"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:hint="complete name"
+        android:layout_below="@id/regis_password"
+        />
+
+    <EditText
+        android:id="@+id/regis_address"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="address"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@id/regis_name"
+        />
+
+    <Button
+        android:id="@+id/buttonSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:layout_marginRight="25dp"
+        android:layout_alignRight="@id/regis_address"
+        android:layout_below="@id/regis_address"
+        />
+</RelativeLayout>
